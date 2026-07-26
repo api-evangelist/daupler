@@ -1,7 +1,27 @@
 aid: daupler
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/daupler.png
 name: Daupler
-description: Daupler is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Daupler provides a cloud-based Response Management System (RMS) for utilities, public works,
+  and service organizations that automates and coordinates emergency and service-request response.
+  Its product suite spans Daupler Answering (after-hours call center), Dispatch Assist and AI-driven
+  call management, Callout crew notification, Notify mass notification via SMS/email/phone, Engage
+  customer portal, Event Detection for multi-incident coordination, and Analytics for incident and
+  team-performance insight. Daupler serves water, sewer, electric, multi-utility, trash-collection,
+  and public-works operators. The RMS is built on RESTful services and integrates with CMMS, work-order,
+  AMI, IoT sensor, billing, CIS, CRM, OMS, GIS, and citizen-request systems, though Daupler exposes no
+  public self-serve developer API or documentation. Backed by Techstars.
 url: https://raw.githubusercontent.com/api-evangelist/daupler/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +31,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Response Management
+- Utilities
+- Public Works
+- Emergency Response
+- Dispatch
+- Notifications
+- Water
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/daupler-domain-security.yml
 - type: Website
   url: https://daupler.com/
+- type: Blog
+  url: https://daupler.com/resources/blog
+- type: PrivacyPolicy
+  url: https://daupler.com/privacy-policy
+- type: TermsOfService
+  url: https://daupler.com/terms-conditions
+- type: Login
+  url: https://www.daupler.com/login/
+- type: Support
+  url: https://daupler.com/about-us/contact-us
+- type: Careers
+  url: https://daupler.com/about-us/careers
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
